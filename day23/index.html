@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css display property Day-23</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        color: aqua;
+        background-color: #6b0f0f;
+        border: 2px solid blue;
+        /* display: flex;*/
+        justify-content: center;
+        width: 200px;
+        padding: 30px;
+        margin: 20px;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+
+      .span1 {
+        color: blueviolet;
+        background-color: aqua;
+        padding: 0.4em;
+        margin: 0.3em;
+      }
+
+      .span2 {
+        color: blue;
+        background-color: #26bf56;
+
+        padding: 0.3em;
+      }
+
+      p {
+        color: yellow;
+        background-color: coral;
+        padding: 6px;
+        margin: 20px;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">* I am div with class 'box'.</div>
+    <div class="box">* I am second Div.</div>
+
+    <span class="span1">* I am span1.I am inline element .</span>
+    <span class="span2">* I am span2. I am also inline element.</span>
+
+    <p>*** we can change inline to block element through styling of css. ***</p>
+  </body>
+</html>

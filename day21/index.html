@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specifications && Cascade Algorithm</title>
+
+    <!-- style of html document   -->
+    <style>
+      /* specifications for universal selector is 0*/
+      * {
+        color: rgb(212, 150, 26);
+        background-color: #345b67;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 20px;
+      }
+
+      /*specifications of element selector is 1*/
+      h1 {
+        color: aqua;
+        background-color: red;
+      }
+
+      /* specifications for id selector is 100*/
+
+      #fsid {
+        color: rgb(3, 255, 3);
+        background-color: blue;
+      }
+
+      /* specifications for class selector is 10*/
+      .fst {
+        color: rebeccapurple;
+        background-color: #0ef3dc;
+      }
+
+      /* specifications for class selector is 10*/
+      .snd {
+        color: red;
+        background-color: rgb(78, 164, 47);
+      }
+
+      /* specifications for class selector is 10*/
+      .thrd {
+        color: rgb(14, 23, 117);
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- pure element selector  -->
+      <h1>
+        css follow cascade Algorithm.And I have no clsss or id selector .I am
+        pure element selector.
+      </h1>
+
+      <!-- classes have specifications 10. -->
+      <h1 class="fst snd thrd">I have only class selector.</h1>
+
+      <!-- selector with id and class.But id will applied due to more precedence i.e specification . -->
+      <h1 id="fsid" class="fst snd thrd">
+        I have id , class and obviously element selector .
+      </h1>
+
+      <!-- you can see that inline have more precedence over any selector   -->
+      <h1
+        style="color: rgb(111, 21, 49); background-color: rgb(65, 203, 68)"
+        id="fsid"
+        class="fst snd thrd"
+      >
+        I have all types of selector. like : inline ,id ,class ,element
+        selector.
+      </h1>
+      <!--specifications of "inline" selector is "1000" -->
+
+      <p style="background-color: rgb(79, 79, 202)">
+        I am a paragraph with universal selector.I took background color from my
+        inline property.
+      </p>
+    </div>
+  </body>
+</html>

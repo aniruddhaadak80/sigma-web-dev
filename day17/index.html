@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selectors Day-17</title>
+
+    <!-- style of html document  -->
+    <style>
+
+        /*Element selector */
+      div {
+        background-color: #ff0000;
+      }
+
+      /*Using class selector */
+      .div2{
+        background-color: #6fff00;
+      }
+
+   /*Using ID selector */
+#div3{
+   background-color: #5500ff;
+   color: #fefa04;
+}
+
+/*Using child selector named p .Remember the p should be the child of "div3 "*/
+#div3>p{
+    color: #ff0000;
+    background-color: #2acdff;
+}
+
+/*Desendent selector*/
+div p{
+    background-color: #9ab466;
+}
+
+
+/*I used universal selector to give mergin and padding of all div and his childs.And also gives them proper border radius */
+*{
+    margin: 1px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/*Psudo selector*/
+
+/*To see the link-color after you click. */
+a:active{
+   background-color: #ff0000;
+}
+
+/*To see if the website is visited or not */
+a:visited{
+    color: #00ff0d;
+}
+
+/*To hover on the link*/
+a:hover{
+   color: blue;
+}
+
+/*it is also psudo selector ,that is used to select the first child p .*/
+p:first-child{
+    color: #5500ff;
+}
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <!-- 1st div with a child paragraph  -->
+    <div>I am first div .Don't underestimate me .....😅😅😅
+        <p>I am the child of 1st div element.</p>
+    </div>
+<br>
+<!-- 2nd div  -->
+    <div class="div2">
+        I am second Div .My class name is "2nddiv".
+    </div>
+    <br>
+
+    <!-- 3rd div with a child named paragraph p -->
+    <div id="div3">
+        I am Third div  .My id is ='div3'.
+        <p>I am the child  of third div (div3) Element</p>
+    </div>
+
+    <br>
+
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+
+
+  </body>
+</html>
