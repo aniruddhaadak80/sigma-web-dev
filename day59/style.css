@@ -1,0 +1,26 @@
+#inp-div{
+    
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+input{
+    color: aqua;
+    background-color: red;
+    height: auto;
+    width: auto;
+}
+
+button{
+   background-color: purple;
+   color: aliceblue;
+   text-align: center;
+}
+
+#button-div{
+    text-align: center;
+    padding: 3px;
+    justify-content: space-between;
+    
+}
